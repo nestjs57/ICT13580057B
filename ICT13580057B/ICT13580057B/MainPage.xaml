@@ -2,10 +2,41 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ICT13580057B"
-             x:Class="ICT13580057B.MainPage">
+             x:Class="ICT13580057B.MainPage"
+             BackgroundColor="Teal">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+
+    <StackLayout>
+        <StackLayout
+            Orientation="Horizontal"
+            BackgroundColor="AliceBlue"
+            Margin="10,10,10,10">
+            <Label
+                x:Name="minimunLabel"
+                Text="10"
+                HorizontalOptions="Start"/>
+            <Slider
+                x:Name="mySlider"
+                Maximum="100"
+                Minimum="0"
+                Value="50"
+                HorizontalOptions="FillAndExpand"
+                />
+            <Label
+                x:Name="maximimLabel"
+                Text="100"
+                HorizontalOptions="End"/>
+        </StackLayout>
+        
+    </StackLayout>
+
+        
+
+
+
+
+
+
+
 
 </ContentPage>

@@ -12,6 +12,13 @@ namespace ICT13580057B
         public MainPage()
         {
             InitializeComponent();
+            mySlider.ValueChanged += MySlider_ValueChanged;
+        }
+
+        private void MySlider_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            int value = (int)e.NewValue;
+            minimunLabel.Text = value.ToString();
         }
     }
 }
